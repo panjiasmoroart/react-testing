@@ -8,11 +8,11 @@ describe("Testing untuk seluruh App", () => {
     // sehingga kita bisa melakukan testing terhadap element yg nampak
     render(<App />);
     // menampilkan ke dalam terminal apa yg telah di render oleh RTL
-    screen.debug();
+    // screen.debug();
 
     const btn = screen.getByRole("button");
     // buat sekenario seolah-olah diklik
     fireEvent.click(btn);
-    screen.debug();
+    // screen.debug();
   });
 });
