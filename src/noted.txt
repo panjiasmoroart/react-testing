@@ -1,0 +1,18 @@
+Search Types (mencari element) di React Testing Library (RTL)
+
+1. Text: <p>Cari text ini</p> => getByText("Cari text ini")
+2. LabelText: <label for="email" /> => getByLabelText("email")  
+3. PlaceholderText: <input placeholder="masukan email" /> => getByPlaceholderText("masukan email")
+4. AltText: <img alt="img-profile" /> => getByAltText("img-profile")
+5. DisplayValue: <input value="pandjiasmoroart@gmail.com" /> => getByDisplayValue("pandjiasmoroart@gmail.com")
+6. Role: <button>submit</button> => getByRole("button")
+7. TestId: <div data-testid="nama-id-nya">item apapun</div> => getByTestId("nama-id-nya")
+
+
+Search Variant (variant pencarian)
+
+pada sebelumnya kita sudah menggunakan variant yaitu (getBy), ada dua variant
+lagi yg belum kita coba dan ketahui yaitu : (queryBy dan findBy) dimana variant 
+ini bisa kita sandingkan dengan search types pada sebelumnya 
+
+contoh queryBy : queryByText, queryByLabelText
